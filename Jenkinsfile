@@ -5,7 +5,7 @@ node {
   def mvnHome = tool 'Maven3'
    
     stage ('Build') {
-            sh 'mvn -f sample-java-app/pom.xml clean install'            
+            sh 'mvn -f pom.xml clean install'            
         }
         
     stage ('archive') {
