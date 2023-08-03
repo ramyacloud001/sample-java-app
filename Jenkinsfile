@@ -10,9 +10,9 @@ node {
             sh 'mvn -f pom.xml clean install'            
         }
         
-   # stage ('archive') {
-   #         archiveArtifacts '**/*.jar'
-   #     }
+    stage ('archive') {
+            archiveArtifacts '**/*.jar'
+        }
         
     stage("Build") {
             steps {
