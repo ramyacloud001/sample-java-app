@@ -15,7 +15,7 @@ node {
     stage("Build") {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh '/var/lib/jenkins/workspace/guvitask/deploy1.sh'
+                sh '/var/lib/jenkins/workspace/java-application/deploy1.sh'
             }
         }
     }
